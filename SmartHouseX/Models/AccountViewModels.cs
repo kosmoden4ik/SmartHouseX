@@ -48,6 +48,7 @@ namespace SmartHouseX.Models
 
     public class LoginViewModel
     {
+        public string id_Device { get; set; }
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
