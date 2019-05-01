@@ -10,7 +10,7 @@ namespace SmartHouseX.Models
         public int id_Device { get; set; }
         public string macadress { get; set; }
         public string type_device { get; set; }
-        public string status { get; set; }
+        public string status { get; set; }//Comand
         public DateTime last_activ_time { set; get; }
     }
 }
