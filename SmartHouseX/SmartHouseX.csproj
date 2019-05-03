@@ -283,6 +283,7 @@
     <Content Include="Content\fonts\open-iconic\open-iconic.ttf" />
     <Content Include="Content\fonts\open-iconic\open-iconic.woff" />
     <Content Include="Content\scss\style.scss" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
