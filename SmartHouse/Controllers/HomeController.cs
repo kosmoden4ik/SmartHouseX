@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SmartHouse.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -8,10 +11,28 @@ namespace SmartHouse.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
+            var device = await GetDevice();
+            ViewBag.device = device.macadress;
             return View();
         }
+        private async Task<DeviceModels> GetDevice()
+        {
+            var device = new DeviceModels();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new System.Uri("http://smarthouse-001-site1.btempurl.com/");
+                var response = await client.GetAsync("/api/app/GetUser");
+                device.macadress = response.IsSuccessStatusCode ? await response.Content.ReadAsStringAsync() : "<h1>Null</h1>";
+
+            }
+            return device;
+        }
+        /*   public ActionResult Index()
+           {
+               return View();
+           }*/
 
         public ActionResult About()
         {
@@ -19,9 +40,15 @@ namespace SmartHouse.Controllers
 
             return View();
         }
+        public ActionResult HowConnect()
+        {
+
+            return View();
+        }
 
         public ActionResult Contact()
         {
+           
             ViewBag.Message = "Your contact page.";
 
             return View();
