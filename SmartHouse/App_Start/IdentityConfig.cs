@@ -14,6 +14,7 @@ using SmartHouse.Models;
 
 namespace SmartHouse
 {
+
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
