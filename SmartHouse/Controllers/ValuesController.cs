@@ -12,10 +12,16 @@ namespace SmartHouse.Controllers
     public class ValuesController : ApiController
     {
         DeviceDBContext db = new DeviceDBContext();
+        [HttpGet]
+        public string PrintString()
+        {
+            return ("Test String");
+        }
 
         public IEnumerable<DeviceModels> GetDevice()
         {
             return db.Devices;
+           
         }
         public DeviceModels GetDevice(int id)
         {

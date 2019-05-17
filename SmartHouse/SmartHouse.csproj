@@ -224,6 +224,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\coming-soon.css" />
+    <Content Include="Content\css\coming-soon.min.css" />
     <Content Include="Content\fonts\ElegantIcons.svg" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -430,10 +432,14 @@
     <Content Include="Content\images\worksingle-6.jpg" />
     <Content Include="Content\images\worksingle-7.jpg" />
     <Content Include="Content\images\worksingle-8.jpg" />
+    <Content Include="Content\img\bg-mobile-fallback.jpg" />
     <Content Include="Content\lib.css" />
+    <Content Include="Content\mp4\bg.mp4" />
     <Content Include="Content\open-iconic-bootstrap.min.css" />
     <Content Include="Content\rtl.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Scripts\coming-soon.js" />
+    <Content Include="Scripts\coming-soon.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -489,6 +495,13 @@
     <Content Include="Content\fonts\open-iconic\open-iconic.ttf" />
     <Content Include="Content\fonts\open-iconic\open-iconic.woff" />
     <Content Include="Content\scss\style.scss" />
+    <Content Include="Content\scss\coming-soon.scss" />
+    <Content Include="Content\scss\_bootstrap-overrides.scss" />
+    <Content Include="Content\scss\_global.scss" />
+    <Content Include="Content\scss\_masthead.scss" />
+    <Content Include="Content\scss\_mixins.scss" />
+    <Content Include="Content\scss\_social.scss" />
+    <Content Include="Content\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\functions.js" />

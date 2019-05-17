@@ -22,7 +22,7 @@ namespace SmartHouse.Controllers
             var device = new DeviceModels();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new System.Uri("http://smarthouse-001-site1.btempurl.com/");
+                client.BaseAddress = new System.Uri("http://localhost:1976/");
                 var response = await client.GetAsync("/api/app/GetUser");
                 device.macadress = response.IsSuccessStatusCode ? await response.Content.ReadAsStringAsync() : "<h1>Null</h1>";
 

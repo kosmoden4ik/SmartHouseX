@@ -7,7 +7,7 @@ namespace SmartHouse.Models
 {
     public class DeviceModels
     {
-        public int id_Device { get; set; }
+        public int? id_Device { get; set; }
         public string macadress { get; set; }
         public string type_device { get; set; }
         public string status { get; set; }//Comand
