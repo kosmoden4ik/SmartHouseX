@@ -502,6 +502,7 @@
     <Content Include="Content\scss\_mixins.scss" />
     <Content Include="Content\scss\_social.scss" />
     <Content Include="Content\scss\_variables.scss" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\functions.js" />
